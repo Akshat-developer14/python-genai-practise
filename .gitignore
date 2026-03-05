@@ -24,7 +24,9 @@ ENV/
 # Project specific*.log
 .env.pytest_cache/
 .coveragehtmlcov/
-
+# Environment variables
+.env
+.env.local
 
 
 
