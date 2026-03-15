@@ -27,15 +27,8 @@ ENV/
 # Environment variables
 .env
 .env.local
-
-
-
-
-
-
-
-
-wo
+# Some docs
+mysql-handbook.pdf
 
 
 
