@@ -13,6 +13,12 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 
 client = Groq(api_key=groq_api_key)
 
+"""
+Download the model files from the official Kokoro GitHub repository:
+For "kokoro-v1.0.onnx": https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+For "voices-v1.0.bin": https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+Place the files in the same directory as this script.
+"""
 VOICE_FILE = "kokoro-v1.0.onnx"
 VOICES_BIN = "voices-v1.0.bin"
 

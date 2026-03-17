@@ -28,6 +28,12 @@ if not os.path.exists(VOICE_FILE) or not os.path.exists(VOICES_BIN):
 
 # --- 2. INITIALIZE MODELS ---
 print("Loading Local Models (STT & TTS)...")
+"""
+Download the model files from the official Kokoro GitHub repository:
+For "kokoro-v1.0.onnx": https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+For "voices-v1.0.bin": https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+Place the files in the same directory as this script.
+"""
 stt_model = WhisperModel(STT_MODEL_SIZE, device="cpu", compute_type="int8")
 tts = Kokoro(VOICE_FILE, VOICES_BIN)
 
